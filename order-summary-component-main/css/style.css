@@ -79,6 +79,7 @@ main{
 .card__title{
     font-size: 2.2rem;
     font-weight: 900;
+    color: var(--Dark-blue);
 }
 
 .card__text{
