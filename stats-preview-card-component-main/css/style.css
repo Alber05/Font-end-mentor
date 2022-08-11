@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%); /*  (main background)*/
+    --Dark-desaturated-blue: hsl(244, 38%, 16%); /* (card background)*/
+    --Soft-violet: hsl(277, 64%, 61%); /*(accent)*/
+    --White: hsl(0, 0%, 100%); /* (main heading, stats)*/
+    --Slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75); /* (main paragraph)*/
+    --Slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6); /* (stat headings)*/
+    --Inter-font: 'Inter', sans-serif;
+    --Lexend-font: 'Lexend Deca', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+/* LAYAOUT */
+
+body{
+    background-color: var(--Very-dark-blue);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 32.7rem;
+  
+
+}
+
+.card-header{
+   position: relative;
+   
+}
+
+.card_header--fondo::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: var(--Soft-violet);
+    opacity: 0.4;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 1024px){
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        width:92.2rem;
+    
+    }
+
+    .card-header{
+        width: 50%;
+        flex-grow: 1;
+    }
+
+}
+
+
+picture img{
+    display: block;
+}
+
+.card-body{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+@media (min-width: 1024px){
+    .card-body{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 7rem;
+
+    }
+}
+
+.card-body__title{
+    color: var(--White);
+    font-family: var(--Inter-font);
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px){
+    .card-body__title{
+      text-align: start;
+      font-size: 3.4rem;
+      margin-top: 0;
+    }
+}
+
+.card-body__title--acent{
+    color: var(--Soft-violet);
+}
+
+.card-body__text{
+    font-size: 1.5rem;
+    color: var(--Slightly-transparent-white-paragraph);
+    font-family: var(--Lexend-font);
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 1024px){
+    .card-body__text{
+      text-align: start;
+      margin-left: 0;
+    }
+}
+
+
+
+@media (min-width: 1024px){
+    .card-body__statistics{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 2.5rem;
+   
+    }
+}
+
+.card-body__numbers{
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px){
+    .card-body__numbers{
+        text-align: start;
+        margin-bottom: 0;
+    }
+}
+
+.card-body__numbers h2{
+    font-family: var(--Inter-font);
+    color: var(--White);
+    font-size: 2rem;
+}
+
+.card-body__numbers p{
+    font-size: 1.5rem;
+    font-family: var(--Lexend-font);
+    color: var(--Slightly-transparent-white-stat);
+    text-transform: uppercase;
+}
