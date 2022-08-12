@@ -162,6 +162,7 @@ picture img{
 
 @media (min-width: 1024px){
     .card-body__numbers{
+        margin-top: 2rem;
         text-align: start;
         margin-bottom: 0;
     }
