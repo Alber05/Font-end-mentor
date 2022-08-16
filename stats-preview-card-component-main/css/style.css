@@ -26,6 +26,7 @@ html{
 
 img{
     width: 100%;
+
 }
 
 
@@ -62,7 +63,8 @@ main{
     height: 100%;
     content: "";
     background: var(--Soft-violet);
-    opacity: 0.4;
+        mix-blend-mode: multiply;
+    opacity: 0.8;
     left: 0;
     top: 0;
 }
@@ -94,6 +96,7 @@ main{
 
 picture img{
     display: block;
+    
 }
 
 .card-body{
