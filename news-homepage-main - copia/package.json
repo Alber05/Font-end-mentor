@@ -1,0 +1,13 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "watch": "sass --watch ./src/css/styles.scss ./public/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
